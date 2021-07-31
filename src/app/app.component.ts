@@ -7,5 +7,5 @@ import { User } from './user/user.model';
 })
 export class AppComponent {
   name = 'Angular ' + VERSION.major;
-  users: User[] = [new User('Ravi', 'Kambham'), new User('Suhas', 'Ravva')];
+  users: User[] = [new User('Ravi', 'Kambhampati'), new User('Suhas', 'Ravva')];
 }
