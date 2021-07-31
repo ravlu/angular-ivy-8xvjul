@@ -6,10 +6,23 @@ import { HelloComponent } from './hello.component';
 import { UserModule } from './user/user.module';
 import { CommonModule } from '@angular/common';
 import { CustomerComponent } from './customer/customer.component';
+import {
+  ComplexComponent,
+  ComplexExtComponent,
+  LowerService,
+  UpperService
+} from './complex.component';
 
 @NgModule({
-  imports: [BrowserModule, FormsModule, UserModule, CommonModule],
-  declarations: [AppComponent, HelloComponent, CustomerComponent],
+  imports: [BrowserModule, FormsModule, UserModule],
+  declarations: [
+    AppComponent,
+    HelloComponent,
+    CustomerComponent,
+    ComplexExtComponent,
+    ComplexComponent
+  ],
+  providers: [UpperService, LowerService],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
